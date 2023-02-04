@@ -1,7 +1,7 @@
 const User = require("./User");
-const ReportModel = require("./ReportModel");
+const Log = require("./Log");
 
 module.exports = {
   User,
-  ReportModel
+  Log
 };

@@ -3,9 +3,10 @@ const router = express.Router()
 const { verifyToken } = require('../helpers')
 
 const userRoutes = require('./user')
-const reportRoutes = require('./report')
+const logRoutes = require('./log')
 
 router.use('/user', userRoutes)
-router.use('/report', verifyToken, reportRoutes)
+// router.use('/log', verifyToken, logRoutes)
+router.use('/log', logRoutes)
 
 module.exports = router, verifyToken
