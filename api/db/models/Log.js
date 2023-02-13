@@ -25,6 +25,12 @@ const logSchema = new mongoose.Schema({
     date: {
         type: Date
     },
+    hasTime: {
+        type: Boolean
+    },
+    finish: {
+        type: Date
+    },
 }, { timestamps: true })
 
 const Log = mongoose.model('Log', logSchema)
